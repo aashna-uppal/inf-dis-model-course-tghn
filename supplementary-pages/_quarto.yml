@@ -1,0 +1,18 @@
+project:
+  title: "Eclampsia at KATH"
+  
+website:
+  title: "R Functional Programming"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    css: styles/index.css
+    toc: true
+    standalone: true
+    self-contained: true
+    respect-user-color-scheme: true

@@ -1,0 +1,11 @@
+color:
+  palette:
+    primary: "#398b62"
+    secondary: "#2d5d8b"
+    white: "#ffffff"
+    dark: "#02150b"
+  background: white
+  foreground: dark
+
+logo: 
+  medium: logo.png

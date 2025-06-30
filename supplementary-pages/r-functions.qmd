@@ -1,0 +1,75 @@
+---
+title: "R Functions"
+---
+
+## Introduction
+
+This is a required reading for this course. The purpose of this is to explain a often ignored or delayed programming concept. The concepts here are not R specific but applies to any programming language, so learning them will be important.
+
+## What are functions
+
+A function in programming is a unit of code that does something. Take `+` sign: in computer programming and mathematics, this is a function. It means, take the value on the left of it and add it to the value on the right of it. It is a function because the sign means nothing, it could be replaced with any other sign and as long as there is an agreement on how it should be interpreted, it should be fine. Good luck introducing a new addition sign though.
+
+## Why use function
+
+A lot of computer programming is performing repetitive tasks. If you have yourself performing the same thing over and over again, maybe, it is time to write a function that does it for you.
+
+Say, as the data analyst at a beautiful company, your task is to draw a graph for each unit/department of the company, on demand. At the beginning of the day, you don't know which unit(s) will come but you are proficient at drawing the graph anyways. Well, you have `tidyverse:ggplot2` and you are comfortable doing it. You could do it by hand but what if you can design a process that draws the graph for the required unit for a specific date? Let us design a schema for that.
+
+```         
+input department
+input date
+
+draw graph with date and department
+```
+
+Let us try another trivial example. You work at a company called `Lazy Inc`. Of course, everybody is lazy and they have tasked you to empty their `recycle bins` each month. The prototype may be:
+
+```         
+for each user
+  empty recycle bin
+```
+
+Comparing the 2 function, you may notice 2 features:
+
+-   Function 1 needs to be supplied with some parameters in order to work, function 2 does not need any
+-   Function 1 outputs a something, function 2 does not output anything.
+
+## R functions
+
+You have encountered R functions throughout the introduction, but may not have noticed. Beyond the mathematical functions, `+, -, /, *` etc, Almost everything seem to be a function all:
+
+  - `c()` is a concatenation a function
+  - `setwd()/getwd()` are also function
+  - `data.fram()` is also a function call
+  - `sum(), mean(), summary, table()` are all function calls.
+  
+![R is mostly a functional programming language](r-function.png){fig-alt="R is mostly a functional programming language" width="305" height="225"}
+
+## Types of function
+
+You can classify functions by two ways:
+  - functions that take parameters and funtions that don't take parameters
+  - functions that return a value, and functions that don't return a value
+  
+A function definition is the combination of both.
+
+### Some functions`
+
+The `getwd()` function does not take a parameter but it produces an output, which is the current working directory.
+
+The `setwd()` takes a parameter, where you want the working directory to be set. It produces no output: it just does it work and stops.
+
+The `c()` function expects an argument, but it is okay if you don't give it one, try it. Try the same thing with `sum()`, what do you get? Is the result valid?
+
+## Function defition.
+
+To write a functin is to define a function. To define a function in `R`:
+
+  - Name/label the function
+  - Assignment to the label with `<- or =`
+  - Write `function`
+      - open and close parenthesis, inside the parenthesis, define parameters
+    - Declare the function body inside curly brackets `{}`
+    - Inside the curly brackets, put the function body
+
